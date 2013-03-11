@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">Mapeamento</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                        <!--
+                        <form class="navbar-form pull-right">
+                            <input class="span2" type="text" placeholder="Email">
+                            <input class="span2" type="password" placeholder="Password">
+                            <button type="submit" class="btn">Sign in</button>
+                        </form>
+                        -->
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="row-fluid">
+                <div class="span6">
+                    <div clas="data-attributes">
+                        <div id="data-object">
+                            <div class="attributes">
+                                <a href="javascript:;" class="clean-attribute btn btn-inverse vtop">-</a>            
+                                <input class="data-key" data-rel="name" type="text" value="Name">
+                                <input class="data-value" data-rel="value" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <a href="javascript:;" id="new-attribute" class="btn btn-inverse">+</a>
+                        <a href="javascript:;" id="add-computer" class="btn btn-primary">Add Computer</a>
+                        <a href="javascript:;" id="add-notebook" class="btn btn-primary">Add Notebook</a>
+                        <a href="javascript:;" id="clear-db" class="btn btn-primary">Clear Database</a>
+                    </div>    
+                </div>
+                <div class="span6">
+                    <div id="equipment-data" class="well hide">
+                    </div>
+                </div>
+            </div>
+            <div class="clear">&nbsp;</div>
+
+            <div id="mapping"></div>
+            <div class="clear">&nbsp;</div>
+
+            <hr>
+
+            <footer>
+                <p>&copy; CWI Software 2013</p>
+            </footer>
+
+        </div> <!-- /container -->
+
+        <script src="js/vendor/zepto.min.js"></script>
+        <script src="js/vendor/bootstrap.js"></script>
+        <script src="js/plugins/kinetic-v4.3.3.min.js"></script>
+        <script src="js/plugins/idbstore.min.js"></script>
+        <script src="js/mapping.js"></script>
+    </body>
+</html>
+
